@@ -1,0 +1,47 @@
+{
+    "title1": "What is your preferred language?",
+    "subtitle1": "Choose language",
+    "langEn": "English",
+    "langFr": "French",
+    "langDe": "German",
+    "langEs": "Spanish",
+    
+    "title2": "What gender do you identify with?",
+    "subtitle2": "Please share how do you identify yourself",
+    "genderFemale": "Female",
+    "genderMale": "Male",
+    "genderOther": "Other",
+
+    "title3": "What is your age?",
+    "years1": "18-29 years",
+    "years2": "30-39 years",
+    "years3": "40-49 years",
+    "years4": "50+",
+
+    "title4": "What do you hate the most in a book?",
+    "hate1": "Lack of logic",
+    "hate2": "A slow speed",
+    "hate3": "Lack of humor",
+    "hate4": "Way too generic ending",
+
+    "title5": "What are your favorite topics?",
+    "subtitle5": "Choose up to 3 topics you like",
+    "optionWerewolf": "Werewolf",
+    "optionAction": "Action",
+    "optionRoyalObsession": "Royal Obsession",
+    "optionBillionaire": "Billionaire",
+    "optionRomance": "Romance",
+    "optionYoungAdult": "Young Adult",
+    "optionBadBoy": "Bad Boy",
+
+    "subtitleLoading": "Finding collections for you...",
+    "emailTitle": "Enter your email to get full access",
+    "inputLabel": "Your email",
+    "emailSubtitle": "By continuing I agree with Privacy policy and Terms of use.",
+    
+    "thankYou": "Thank you",
+    "quizThank": "for supporting us and passing quiz",
+    "download": "Download my answers",
+    "retakeQuiz": "Retake quiz",
+    "next": "Next"
+}
