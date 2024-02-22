@@ -10,7 +10,6 @@ interface IProps {
 }
 
 const Progress: FC<IProps> = ({ step, total }) => {
-
     const widthPercent = step / total * 100;
 
     return (
