@@ -1,11 +1,10 @@
 import PageLayout from "../../shared/ui/page-layout/PageLayout";
+import Progress from "../../shared/ui/progress";
 
 const QuizLang = () => {
     return (
         <PageLayout>
-            <div style={{ color: '#eee' }}>
-            dsasad
-            </div>
+            <Progress step={3} total={5} />
         </PageLayout>
     );
 };
