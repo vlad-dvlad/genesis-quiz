@@ -1,43 +1,43 @@
 {
-    "title1": "Quelle est votre langue préférée ?",
-    "subtitle1": "Choisissez la langue",
+  "title1": "Quelle est votre langue préférée ?",
+  "subtitle1": "Choisissez la langue",
 
-    "title2": "Avec quel genre vous identifiez-vous?",
-    "subtitle2": "Veuillez indiquer comment vous vous identifiez",
-    "genderFemale": "Femme",
-    "genderMale": "Homme",
-    "genderOther": "Autre",
-    
-    "title3": "Quel est votre âge?",
-    "years1": "18-29 ans",
-    "years2": "30-39 ans",
-    "years3": "40-49 ans",
-    "years4": "50+",
-    
-    "title4": "Qu'est-ce que vous détestez le plus dans un livre?",
-    "hate1": "Manque de logique",
-    "hate2": "Lenteur",
-    "hate3": "Manque d'humour",
-    "hate4": "Fin beaucoup trop générique",
-    
-    "title5": "Quels sont vos sujets préférés?",
-    "subtitle5": "Choisissez jusqu'à 3 sujets que vous aimez",
-    "optionWerewolf": "Loup-garou",
-    "optionAction": "Action",
-    "optionRoyalObsession": "Obsession royale",
-    "optionBillionaire": "Milliardaire",
-    "optionRomance": "Romance",
-    "optionYoungAdult": "Jeune adulte",
-    "optionBadBoy": "Mauvais garçon",
-    
-    "subtitleLoading": "Recherche de collections pour vous...",
-    "emailTitle": "Entrez votre e-mail pour obtenir un accès complet",
-    "inputLabel": "Votre e-mail",
-    "emailSubtitle": "En continuant, j'accepte la politique de confidentialité et les conditions d'utilisation.",
-    
-    "thankYou": "Merci",
-    "quizThank": "de nous soutenir et de passer le quiz",
-    "download": "Télécharger mes réponses",
-    "retakeQuiz": "Refaire le quiz",
-    "next": "Suivant"
+  "title2": "Avec quel genre vous identifiez-vous?",
+  "subtitle2": "Veuillez indiquer comment vous vous identifiez",
+  "genderFemale": "Femme",
+  "genderMale": "Homme",
+  "genderOther": "Autre",
+
+  "title3": "Quel est votre âge?",
+  "years1": "18-29 ans",
+  "years2": "30-39 ans",
+  "years3": "40-49 ans",
+  "years4": "50+",
+
+  "title4": "Qu'est-ce que vous détestez le plus dans un livre?",
+  "hate1": "Manque de logique",
+  "hate2": "Lenteur",
+  "hate3": "Manque d'humour",
+  "hate4": "Fin beaucoup trop générique",
+
+  "title5": "Quels sont vos sujets préférés?",
+  "subtitle5": "Choisissez jusqu'à 3 sujets que vous aimez",
+  "optionWerewolf": "Loup-garou",
+  "optionAction": "Action",
+  "optionRoyalObsession": "Obsession royale",
+  "optionBillionaire": "Milliardaire",
+  "optionRomance": "Romance",
+  "optionYoungAdult": "Jeune adulte",
+  "optionBadBoy": "Mauvais garçon",
+
+  "subtitleLoading": "Recherche de collections pour vous...",
+  "emailTitle": "Entrez votre e-mail pour obtenir un accès complet",
+  "inputLabel": "Votre e-mail",
+  "emailSubtitle": "En continuant, j'accepte la politique de confidentialité et les conditions d'utilisation.",
+
+  "thankYou": "Merci",
+  "quizThank": "de nous soutenir et de passer le quiz",
+  "download": "Télécharger mes réponses",
+  "retakeQuiz": "Refaire le quiz",
+  "next": "Suivant"
 }

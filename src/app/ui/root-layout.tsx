@@ -1,13 +1,13 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
 import Header from '../../shared/ui/header';
 
 const RootLayout = () => {
-    return (
-        <>
-            <Header />
-            <Outlet />
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  );
 };
 
 export default RootLayout;

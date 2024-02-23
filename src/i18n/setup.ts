@@ -4,16 +4,14 @@ import backend from 'i18next-http-backend';
 import { LANGUAGES } from '../shared/config/common';
 
 i18n
-    .use(backend)
-    .use(initReactI18next)
-    .init({ 
-        backend: {
-            loadPath: '/locales/{{lng}}.json'
-        },
-        fallbackLng: 'en',
-        supportedLngs: LANGUAGES
-     }) 
-
+  .use(backend)
+  .use(initReactI18next)
+  .init({
+    backend: {
+      loadPath: '/locales/{{lng}}.json'
+    },
+    fallbackLng: 'en',
+    supportedLngs: LANGUAGES
+  });
 
 export default i18n;
-
