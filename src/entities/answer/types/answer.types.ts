@@ -5,4 +5,5 @@ export interface IAnswer {
   gender: string;
   age: string;
   hateCriterias: string[];
+  favTopics: string[];
 }
