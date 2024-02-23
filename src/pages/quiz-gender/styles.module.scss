@@ -1,0 +1,50 @@
+.gender {
+    &__title {
+        font-family: 'Nunito Sans Bold';
+        color: #F2F3F5;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        color: #C4C8CC;
+        font-family: 'Nunito Sans Regular';
+        font-size: 17px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+    }
+
+    &__item {
+        background-color: #36173D;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        border-radius: 12px;
+        padding: 20px 0;
+        cursor: pointer;
+    }
+
+    &__emodji {
+        font-size: 52px;
+        line-height: 71px;
+    }
+
+    &__label {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        font-family: 'Nunito Sans SemiBold';
+    }
+}

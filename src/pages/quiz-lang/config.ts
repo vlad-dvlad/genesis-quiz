@@ -1,4 +1,6 @@
-export const languages = [
+import { ILanguage } from "../../entities/answer/types/answer.types";
+
+export const languages: { code: ILanguage, name: string }[] = [
     {
         code: 'en',
         name: 'English',

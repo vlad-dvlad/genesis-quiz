@@ -3,14 +3,23 @@ import PageLayout from "../../shared/ui/page-layout/PageLayout";
 import { languages } from "./config";
 import classNames from "classnames/bind";
 import styles from "./styles.module.scss"
+import { useAnswerStore } from "../../entities/answer/models/answer.store";
+import { ILanguage } from "../../entities/answer/types/answer.types";
+import { useNavigate } from "react-router";
+import { RouteE } from "../../shared/config/navigation";
 
 const cx = classNames.bind(styles);
 
 const QuizLang = () => {
-    const { t, i18n  } = useTranslation()
+    const { t, i18n  } = useTranslation();
+    const navigate = useNavigate();
+    const { answer, setAnswer } = useAnswerStore();
 
     const chooseLang = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-        i18n.changeLanguage((e.target as HTMLElement).id)
+        const langCode = (e.target as HTMLElement).id as ILanguage
+        i18n.changeLanguage(langCode)
+        setAnswer({ ...answer, language: langCode })
+        navigate(RouteE.QUIZ_2)
     }
     
     return (
