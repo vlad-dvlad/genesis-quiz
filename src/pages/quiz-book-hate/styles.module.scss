@@ -1,4 +1,11 @@
 .hate {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 30px;
+        min-height: 100%;
+    }
     &__title {
         font-family: 'Nunito Sans Bold';
         color: #F2F3F5;
@@ -18,33 +25,69 @@
     }
 
     &__options {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;        
     }
 
     &__item {
+        position: relative;
         background-color: #36173D;
         display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         color: #FFFFFF;
         border-radius: 12px;
-        padding: 20px 0;
+        padding: 18px 20px;
         cursor: pointer;
-    }
+        font-family: 'AlbertSans Medium';
+        font-weight: 500;
+        font-size: 17px;
+        border: 2px solid #36173D;
+        line-height: 24px;
 
-    &__emodji {
-        font-size: 52px;
-        line-height: 71px;
-    }
+        &.selected {
+            background-color: #E4229B33;
+            border: 2px solid #E4229B;
 
-    &__label {
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 20px;
-        font-family: 'Nunito Sans SemiBold';
+        }
+
+        input {
+            width: 23px;
+            height: 23px;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: #6D4376;
+            border-radius: 8px;
+            border: 1px solid #E4229B;
+
+            &:checked {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #E4229B;
+                &::before {
+                    display: block;
+                    content: '\2713';
+                    color: #fff;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    
+    &__next {
+        background-color: #E4229C;
+        font-size: 17px;
+        padding: 16px 0;
+        width: 100%;
+        font-family: 'AlbertSans ExtraBold';
+        font-weight: 800;
+        color: #FFFFFF;
+        border-radius: 1000px;
+        opacity: 1;
+        &:disabled {
+            opacity: 0.5;
+        }
     }
 }

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 module.exports = {
   extends: ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
   overrides: [
@@ -17,7 +18,6 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    "react/react-in-jsx-scope": "off"
   },
   settings: {
       react: {

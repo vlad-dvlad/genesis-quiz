@@ -4,4 +4,5 @@ export interface IAnswer {
   language: ILanguage;
   gender: string;
   age: string;
+  hateCriterias: string[];
 }
