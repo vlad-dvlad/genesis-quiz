@@ -1,10 +1,14 @@
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 
-const Loader = () => {
+interface IProps {
+  submit: () => void;
+}
+
+const Loader: FC<IProps> = ({ submit }) => {
   const [count, setCount] = useState(1);
 
   useEffect(() => {
@@ -12,10 +16,13 @@ const Loader = () => {
       if (count < 100) {
         setCount(count + 1);
       }
+      if (count === 100) {
+        submit();
+      }
     }, 45);
 
     return () => clearTimeout(timer);
-  }, [count]);
+  }, [count, submit]);
 
   return (
     <div className={cx('wrapper')}>

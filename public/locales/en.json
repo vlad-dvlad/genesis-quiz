@@ -31,9 +31,14 @@
   "optionBadBoy": "Bad Boy",
 
   "subtitleLoading": "Finding collections for you...",
+  "email": "Email",
   "emailTitle": "Enter your email to get full access",
   "inputLabel": "Your email",
-  "emailSubtitle": "By continuing I agree with Privacy policy and Terms of use.",
+  "termsLabel1": "By continuing I agree with",
+  "termsLabel2": "Privacy policy",
+  "termsLabel3": "and",
+  "termsLabel4": "Terms of use.",
+  "invalidEmail": "invalid Email",
 
   "thankYou": "Thank you",
   "quizThank": "for supporting us and passing quiz",

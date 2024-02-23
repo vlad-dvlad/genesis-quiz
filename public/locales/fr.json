@@ -31,9 +31,14 @@
   "optionBadBoy": "Mauvais garçon",
 
   "subtitleLoading": "Recherche de collections pour vous...",
+  "email": "Courriel",
   "emailTitle": "Entrez votre e-mail pour obtenir un accès complet",
   "inputLabel": "Votre e-mail",
-  "emailSubtitle": "En continuant, j'accepte la politique de confidentialité et les conditions d'utilisation.",
+  "termsLabel1": "En continuant, j'accepte les",
+  "termsLabel2": "Politique de confidentialité",
+  "termsLabel3": "et les",
+  "termsLabel4": "Conditions d'utilisation.",
+  "invalidEmail": "Courriel invalide",
 
   "thankYou": "Merci",
   "quizThank": "de nous soutenir et de passer le quiz",

@@ -31,9 +31,14 @@
   "optionBadBoy": "Chico malo",
 
   "subtitleLoading": "Buscando colecciones para ti...",
+  "email": "Correo electrónico",
   "emailTitle": "Ingresa tu correo electrónico para obtener acceso completo",
   "inputLabel": "Tu correo electrónico",
-  "emailSubtitle": "Al continuar, acepto la política de privacidad y los términos de uso.",
+  "termsLabel1": "Al continuar, acepto la",
+  "termsLabel2": "política de privacidad",
+  "termsLabel3": "y los",
+  "termsLabel4": "términos de uso.",
+  "invalidEmail": "Correo electrónico no válido",
 
   "thankYou": "Gracias",
   "quizThank": "por apoyarnos y completar el cuestionario",

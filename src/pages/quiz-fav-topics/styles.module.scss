@@ -4,7 +4,6 @@
         justify-content: space-between;
         flex-direction: column;
         row-gap: 30px;
-        min-height: 100%;
     }
     &__title {
         font-family: 'Nunito Sans Bold';
@@ -101,5 +100,15 @@
         &:disabled {
             opacity: 0.5;
         }
+    }
+
+    &__label {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 25px;
+        font-family: 'AlbertSans SemiBold';
+        text-align: center;
+        color: #eee
     }
 }

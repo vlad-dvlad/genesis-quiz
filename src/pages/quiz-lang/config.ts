@@ -3,18 +3,18 @@ import { ILanguage } from '../../entities/answer/types/answer.types';
 export const languages: { code: ILanguage; name: string }[] = [
   {
     code: 'en',
-    name: 'English'
+    name: 'English',
   },
   {
     code: 'fr',
-    name: 'French'
+    name: 'French',
   },
   {
     code: 'de',
-    name: 'German'
+    name: 'German',
   },
   {
     code: 'es',
-    name: 'Spanish'
-  }
+    name: 'Spanish',
+  },
 ];

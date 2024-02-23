@@ -18,7 +18,10 @@ const Progress: FC<IProps> = ({ step, total }) => {
         {step}/{total}
       </div>
       <div className={cx('progress__item')}>
-        <div className={cx('progress__step')} style={{ width: `${widthPercent}%` }} />
+        <div
+          className={cx('progress__step')}
+          style={{ width: `${widthPercent}%` }}
+        />
       </div>
     </div>
   );

@@ -31,9 +31,14 @@
   "optionBadBoy": "Bad Boy",
 
   "subtitleLoading": "Suche nach Sammlungen für Sie...",
+  "email": "Email",
   "emailTitle": "Geben Sie Ihre E-Mail-Adresse ein, um vollen Zugriff zu erhalten",
   "inputLabel": "Ihre E-Mail",
-  "emailSubtitle": "Durch die Fortsetzung stimme ich der Datenschutzrichtlinie und den Nutzungsbedingungen zu.",
+  "termsLabel1": "Indem ich fortfahre, stimme ich den",
+  "termsLabel2": "Datenschutzbestimmungen",
+  "termsLabel3": "und den",
+  "termsLabel4": "Nutzungsbedingungen zu.",
+  "invalidEmail": "Ungültige E-Mail",
 
   "thankYou": "Danke",
   "quizThank": "für Ihre Unterstützung und das Bestehen des Quiz",

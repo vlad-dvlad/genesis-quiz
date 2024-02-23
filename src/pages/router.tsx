@@ -1,5 +1,10 @@
 import { Suspense } from 'react';
-import { createBrowserRouter, createRoutesFromElements, Navigate, Route } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Navigate,
+  Route,
+} from 'react-router-dom';
 import RootLayout from '../app/ui/root-layout';
 import { RouteE } from '../shared/config/navigation';
 import QuizLang from './quiz-lang';
@@ -7,6 +12,8 @@ import QuizGender from './quiz-gender';
 import QuizAge from './quiz-age';
 import QuizBookHate from './quiz-book-hate';
 import QuizFavTopics from './quiz-fav-topics';
+import Contact from './contact';
+import ThankYou from './thank-you';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -52,6 +59,22 @@ export const router = createBrowserRouter(
           </Suspense>
         }
       />
-    </Route>
-  )
+      <Route
+        path={RouteE.EMAIL}
+        element={
+          <Suspense>
+            <Contact />
+          </Suspense>
+        }
+      />
+      <Route
+        path={RouteE.THANK_YOU}
+        element={
+          <Suspense>
+            <ThankYou />
+          </Suspense>
+        }
+      />
+    </Route>,
+  ),
 );

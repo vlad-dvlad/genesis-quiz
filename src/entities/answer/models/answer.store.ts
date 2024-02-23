@@ -11,10 +11,10 @@ export const useAnswerStore = create<AnswerData>()(
   persist(
     (set) => ({
       answer: {} as IAnswer,
-      setAnswer: (answer) => set(() => ({ answer }))
+      setAnswer: (answer) => set(() => ({ answer })),
     }),
     {
-      name: 'quiz_data'
-    }
-  )
+      name: 'quiz_data',
+    },
+  ),
 );

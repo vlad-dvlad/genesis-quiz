@@ -23,15 +23,24 @@ const QuizGender = () => {
       <div className={cx('gender__title')}>{t('title2')}</div>
       <div className={cx('gender__subtitle')}>{t('subtitle2')}</div>
       <div className={cx('gender__options')}>
-        <div onClick={() => selectGender(t('genderFemale'))} className={cx('gender__item')}>
+        <div
+          onClick={() => selectGender(t('genderFemale'))}
+          className={cx('gender__item')}
+        >
           <span className={cx('gender__emodji')}>👩</span>
           <span className={cx('gender__label')}>{t('genderFemale')}</span>
         </div>
-        <div onClick={() => selectGender(t('genderMale'))} className={cx('gender__item')}>
+        <div
+          onClick={() => selectGender(t('genderMale'))}
+          className={cx('gender__item')}
+        >
           <span className={cx('gender__emodji')}>👨</span>
           <span className={cx('gender__label')}>{t('genderMale')}</span>
         </div>
-        <div onClick={() => selectGender(t('genderOther'))} className={cx('gender__item')}>
+        <div
+          onClick={() => selectGender(t('genderOther'))}
+          className={cx('gender__item')}
+        >
           <span className={cx('gender__emodji')}>😉</span>
           <span className={cx('gender__label')}>{t('genderOther')}</span>
         </div>

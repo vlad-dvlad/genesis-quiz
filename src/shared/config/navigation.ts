@@ -6,6 +6,6 @@ export enum RouteE {
   QUIZ_3 = '/app/quiz/3',
   QUIZ_4 = '/app/quiz/4',
   QUIZ_5 = '/app/quiz/5',
-  EMAIL = '/app/quiz/email',
-  THANK_YOU = '/app/quiz/thank-you'
+  EMAIL = '/app/email',
+  THANK_YOU = '/app/thank-you',
 }

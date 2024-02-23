@@ -24,7 +24,7 @@ const QuizBookHate = () => {
       if (t(criteria.name) === title) {
         return {
           ...criteria,
-          selected: !criteria.selected
+          selected: !criteria.selected,
         };
       }
 
@@ -38,7 +38,7 @@ const QuizBookHate = () => {
       .filter((criteria) => criteria.selected)
       ?.map((criteria) => t(criteria.name));
     setAnswer({ ...answer, hateCriterias: selected });
-    navigate(RouteE.QUIZ_5)
+    navigate(RouteE.QUIZ_5);
   }, [criterias]);
 
   return (
@@ -57,7 +57,12 @@ const QuizBookHate = () => {
             ))}
           </div>
         </div>
-        <button onClick={saveCriteria} disabled={disableSubmit} className={cx('hate__next')}>
+        <button
+          type="button"
+          onClick={saveCriteria}
+          disabled={disableSubmit}
+          className={cx('hate__next')}
+        >
           {t('next')}
         </button>
       </div>

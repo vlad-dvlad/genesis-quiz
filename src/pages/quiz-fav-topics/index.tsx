@@ -8,6 +8,7 @@ import { useCallback, useState } from 'react';
 import { topics } from './config';
 import Ui from './ui';
 import { RouteE } from '../../shared/config/navigation';
+import Loader from '../../shared/ui/loader';
 
 const cx = classNames.bind(styles);
 
@@ -16,15 +17,18 @@ const QuizFavTopics = () => {
   const navigate = useNavigate();
   const { answer, setAnswer } = useAnswerStore();
   const [topicsList, setTopicsList] = useState(topics);
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const disableSubmit = topicsList.every((topic) => !topic.selected) || topicsList.filter((topic) => topic.selected)?.length > 3;
+  const disableSubmit =
+    topicsList.every((topic) => !topic.selected) ||
+    topicsList.filter((topic) => topic.selected)?.length > 3;
 
   const selectTopics = (title: string) => {
     const updated = topicsList.map((criteria) => {
       if (t(criteria.title) === title) {
         return {
           ...criteria,
-          selected: !criteria.selected
+          selected: !criteria.selected,
         };
       }
 
@@ -38,29 +42,44 @@ const QuizFavTopics = () => {
       .filter((topic) => topic.selected)
       ?.map((topic) => t(topic.title));
     setAnswer({ ...answer, favTopics: selected });
-    navigate(RouteE.QUIZ_5)
+    setLoading(true);
   }, [topicsList]);
 
   return (
     <PageLayout>
-      <div className={cx('topics__container')}>
-      <div className={cx('topics')}>
-        <div className={cx('topics__title')}>{t('title5')}</div>
-        <div className={cx('topics__subtitle')}>{t('subtitle5')}</div>
-        <div className={cx('topics__options')}>
-            {
-              topicsList.map((topic) => (
-                <Ui key={topic.title} selected={topic.selected} title={t(topic.title)} picture={topic.picture} select={selectTopics} />
-              ))
-            }
-        </div>
-      </div>
-      
-      <button onClick={saveCriteria} disabled={disableSubmit} className={cx('topics__next')}>
-          {t('next')}
-      </button>
-      </div>
+      {loading ? (
+        <>
+          <Loader submit={() => navigate(RouteE.EMAIL)} />
+          <div className={cx('topics__label')}>{t('subtitleLoading')}</div>
+        </>
+      ) : (
+        <div className={cx('topics__container')}>
+          <div className={cx('topics')}>
+            <div className={cx('topics__title')}>{t('title5')}</div>
+            <div className={cx('topics__subtitle')}>{t('subtitle5')}</div>
+            <div className={cx('topics__options')}>
+              {topicsList.map((topic) => (
+                <Ui
+                  key={topic.title}
+                  selected={topic.selected}
+                  title={t(topic.title)}
+                  picture={topic.picture}
+                  select={selectTopics}
+                />
+              ))}
+            </div>
+          </div>
 
+          <button
+            type="button"
+            onClick={saveCriteria}
+            disabled={disableSubmit}
+            className={cx('topics__next')}
+          >
+            {t('next')}
+          </button>
+        </div>
+      )}
     </PageLayout>
   );
 };
