@@ -1,0 +1,31 @@
+.ages {
+    &__title {
+        font-family: 'Nunito Sans Bold';
+        color: #F2F3F5;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        row-gap: 10px;
+    }
+
+    &__item {
+        width: 100%;
+        cursor: pointer;
+        font-family: 'Nunito Sans SemiBold';
+        background-color: #36173D;
+        padding: 18px 20px;
+        color: #FFFFFF;
+        font-size: 17px;
+        line-height: 24px;
+        border-radius: 16px;
+    }
+}
