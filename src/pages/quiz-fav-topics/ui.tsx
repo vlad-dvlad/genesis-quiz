@@ -6,16 +6,22 @@ const cx = classNames.bind(styles);
 
 interface IProps {
   title: string;
+  disabled: boolean;
   picture: string;
   selected: boolean;
   select: (value: string) => void;
 }
 
-const Ui: FC<IProps> = ({ title, picture, selected, select }) => {
+const Ui: FC<IProps> = ({ title, disabled, picture, selected, select }) => {
+  
+  const selectTopic = () => {
+    !disabled && select(title);
+  }
+
   return (
     <div
-      onClick={() => select(title)}
-      className={cx('topics__item', { selected })}
+      onClick={selectTopic}
+      className={cx('topics__item', { selected, disabled })}
     >
       <img src={picture} alt={title} width={25} height={25} />
       {title}

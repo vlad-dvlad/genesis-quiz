@@ -29,6 +29,7 @@
   "optionRomance": "Romance",
   "optionYoungAdult": "Young Adult",
   "optionBadBoy": "Bad Boy",
+  "someTopicsDisabled": "Some categories disabled based on previous answers",
 
   "subtitleLoading": "Finding collections for you...",
   "email": "Email",

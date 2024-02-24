@@ -61,6 +61,7 @@ const QuizFavTopics = () => {
               {topicsList.map((topic) => (
                 <Ui
                   key={topic.title}
+                  disabled={answer.hateCriterias.includes(t('hate4')) && !!topic.couldBeDisabled}
                   selected={topic.selected}
                   title={t(topic.title)}
                   picture={topic.picture}
@@ -69,7 +70,9 @@ const QuizFavTopics = () => {
               ))}
             </div>
           </div>
-
+          {
+            answer.hateCriterias.includes(t('hate4')) && <div className={cx('topics__disabled')}>{t('someTopicsDisabled')}</div>
+          }
           <button
             type="button"
             onClick={saveCriteria}

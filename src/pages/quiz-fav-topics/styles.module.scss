@@ -14,13 +14,18 @@
         margin-bottom: 20px;
     }
 
-    &__subtitle {
+    &__subtitle,
+    &__disabled {
         color: #C4C8CC;
         font-family: 'Nunito Sans Regular';
         font-size: 17px;
         line-height: 24px;
         text-align: center;
         margin-bottom: 20px;
+    }
+
+    &__disabled {
+        margin-bottom: 0;
     }
     
     &__options {
@@ -70,6 +75,11 @@
 
         &.selected {
             border: 2px solid #E4229B;
+        }
+
+        &.disabled {
+            opacity: 0.5;
+            cursor: default;
         }
 
         &:nth-child(1) {
