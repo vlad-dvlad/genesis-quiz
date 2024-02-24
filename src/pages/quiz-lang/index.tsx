@@ -17,9 +17,9 @@ const QuizLang = () => {
 
   const chooseLang = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     const langCode = (e.target as HTMLElement).id as ILanguage;
-    const lang = languages.find((lang) => lang.code === langCode)?.name
+    const lang = languages.find((lang) => lang.code === langCode)?.name;
     i18n.changeLanguage(langCode);
-    setAnswer({ ...answer, languageCode: langCode, language: lang ?? ''});
+    setAnswer({ ...answer, languageCode: langCode, language: lang ?? '' });
     navigate(RouteE.QUIZ_2);
   };
 

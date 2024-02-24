@@ -20,17 +20,17 @@ const Contact = () => {
     const regExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     setEmail(value);
 
-    if (regExp.test(value)) { 
-        setError('')
+    if (regExp.test(value)) {
+      setError('');
     } else {
-        setError(t('invalidEmail'));
+      setError(t('invalidEmail'));
     }
   };
 
   const submit = () => {
-    setAnswer({...answer, email })
-    navigate(RouteE.THANK_YOU)
-  }
+    setAnswer({ ...answer, email });
+    navigate(RouteE.THANK_YOU);
+  };
 
   return (
     <PageLayout>
@@ -40,20 +40,25 @@ const Contact = () => {
           <div className={cx('contact__subtitle')}>{t('emailTitle')}</div>
           <div className={cx('contact__inblock')}>
             <input
-                type="email"
-                value={email}
-                onChange={(e) => changeEmail(e.target.value)}
-                placeholder={t('inputLabel')}
-                className={cx('contact__input')}
+              type="email"
+              value={email}
+              onChange={(e) => changeEmail(e.target.value)}
+              placeholder={t('inputLabel')}
+              className={cx('contact__input')}
             />
-            { !!error && <div className={cx("contact__error")}>{error}</div>}
+            {!!error && <div className={cx('contact__error')}>{error}</div>}
           </div>
           <div className={cx('contact__terms')}>
             {t('termsLabel1')}&nbsp;<span>{t('termsLabel2')}</span>
             &nbsp;{t('termsLabel3')}&nbsp;<span>{t('termsLabel4')}</span>
           </div>
         </div>
-        <button type="button" onClick={submit} disabled={!email || !!error} className={cx('contact__next')}>
+        <button
+          type="button"
+          onClick={submit}
+          disabled={!email || !!error}
+          className={cx('contact__next')}
+        >
           {t('next')}
         </button>
       </div>

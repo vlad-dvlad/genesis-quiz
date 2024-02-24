@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import backend from 'i18next-http-backend';
 import { LANGUAGES } from '../shared/config/common';
 
-const quizData = JSON.parse(localStorage.getItem('quiz_data') ?? '')
+const quizData = JSON.parse(localStorage.getItem('quiz_data') ?? '');
 
 i18n
   .use(backend)

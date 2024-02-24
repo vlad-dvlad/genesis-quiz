@@ -44,5 +44,14 @@
   "quizThank": "de nous soutenir et de passer le quiz",
   "download": "Télécharger mes réponses",
   "retakeQuiz": "Refaire le quiz",
-  "next": "Suivant"
+  "next": "Suivant",
+
+  "order": "Ordre",
+  "title": "Titre",
+  "type": "Type",
+  "answer": "Réponse",
+  "singleSelect": "sélection-unique",
+  "singleSelectImg": "sélection-unique-image",
+  "multipleSelect": "sélection-multiple",
+  "bubble": "bulle"
 }
