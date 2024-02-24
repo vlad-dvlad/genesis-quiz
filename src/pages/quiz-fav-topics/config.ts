@@ -1,10 +1,10 @@
-import wolf from '../../../public/icons/wolf.svg';
-import action from '../../../public/icons/action.svg';
-import billionaire from '../../../public/icons/billionaire.svg';
-import romance from '../../../public/icons/romance.svg';
-import badboy from '../../../public/icons/badboy.svg';
-import royal from '../../../public/icons/royal.svg';
-import young from '../../../public/icons/young.svg';
+import wolf from '../../assets/icons/wolf.svg';
+import action from '../../assets/icons/action.svg';
+import billionaire from '../../assets/icons/billionaire.svg';
+import romance from '../../assets/icons/romance.svg';
+import badboy from '../../assets/icons/badboy.svg';
+import royal from '../../assets/icons/royal.svg';
+import young from '../../assets/icons/young.svg';
 
 export const topics = [
   {

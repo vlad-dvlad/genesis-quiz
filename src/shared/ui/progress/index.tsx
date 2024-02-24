@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import classNames from 'classnames/bind';
-import back from '../../../../public/icons/back.svg';
+import back from '../../../assets/icons/back.svg';
 import styles from './styles.module.scss';
 import { useNavigate } from 'react-router';
 
