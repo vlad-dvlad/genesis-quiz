@@ -1,4 +1,4 @@
-import PageLayout from '../../shared/ui/page-layout/PageLayout';
+import PageLayout from '../../shared/ui/page-layout';
 import classNames from 'classnames/bind';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router';

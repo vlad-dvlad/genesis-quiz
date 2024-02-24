@@ -24,6 +24,10 @@
         align-items: center;
         width: 100%;
         row-gap: 10px;
+
+        @media (min-width: 767px) {
+            row-gap: 25px;
+        }
     }
 
     &__item {
@@ -36,5 +40,15 @@
         font-size: 17px;
         line-height: 24px;
         border-radius: 16px;
+        transition: transform .3s ease-out;
+        transition: background-color .3s ease-out;
+
+        &:hover {
+            transform: translate(0, -5px);
+            background-color: #E4229C;
+
+            transition: transform .2s ease-out;
+            transition: background-color .2s ease-out;
+        }
     }
 }

@@ -27,7 +27,11 @@
     &__options {
         display: flex;
         flex-direction: column;
-        row-gap: 10px;        
+        row-gap: 10px;
+
+        @media (min-width: 767px) {
+            row-gap: 25px;
+        }
     }
 
     &__item {
@@ -45,6 +49,15 @@
         font-size: 17px;
         border: 2px solid #36173D;
         line-height: 24px;
+        transition: transform .3s ease-out;
+        transition: background-color .3s ease-out;
+        
+        &:hover {
+            transform: translate(0, -5px);
+            background-color: #E4229C;
+            transition: transform .2s ease-out;
+            transition: background-color .2s ease-out;
+        }
 
         &.selected {
             background-color: #E4229B33;
@@ -60,7 +73,7 @@
             background-color: #6D4376;
             border-radius: 8px;
             border: 1px solid #E4229B;
-
+            cursor: pointer;
             &:checked {
                 display: flex;
                 justify-content: center;

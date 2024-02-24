@@ -2,6 +2,11 @@
     padding: 30px 15px;
     visibility: hidden;
     
+    @media (min-width: 767px) {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
     &.quiz {
         visibility: visible;
     }

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import PageLayout from '../../shared/ui/page-layout/PageLayout';
+import PageLayout from '../../shared/ui/page-layout';
 import { languages } from './config';
 import classNames from 'classnames/bind';
 import { useAnswerStore } from '../../entities/answer/models/answer.store';

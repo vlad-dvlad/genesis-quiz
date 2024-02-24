@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
-import PageLayout from '../../shared/ui/page-layout/PageLayout';
+import PageLayout from '../../shared/ui/page-layout';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router';
 import check from '../../../public/icons/checkmark.svg';

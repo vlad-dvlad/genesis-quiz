@@ -26,6 +26,13 @@
     &__options {
         position: relative;
         min-height: 310px;
+
+        @media (min-width: 767px) {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+        }
     }
 
     &__item {
@@ -45,7 +52,21 @@
         line-height: 16px;
         color: #eee;
         border: 2px solid #36173D;
+        cursor: pointer;
 
+        @media (min-width: 767px) {
+            position: static;
+            border-radius: 12px;
+            width: 100%;
+
+            &:hover {
+                transform: translate(0, -5px);
+                background-color: #E4229C;
+        
+                transition: transform .2s ease-out;
+                transition: background-color .2s ease-out;
+            }
+        }
 
         &.selected {
             border: 2px solid #E4229B;

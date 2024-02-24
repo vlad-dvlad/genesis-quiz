@@ -1,5 +1,10 @@
 .layout {
     padding: 30px 15px;
+
+    @media (min-width: 767px) {
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
 
 .fadeIn {
