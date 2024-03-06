@@ -29,7 +29,13 @@ const ThankYou = () => {
       language: '',
       languageCode: 'en',
     });
-
+    fetch('/app/answer', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({})
+    })
     navigate(RouteE.QUIZ_1);
   };
 

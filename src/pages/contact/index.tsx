@@ -29,6 +29,13 @@ const Contact = () => {
 
   const submit = () => {
     setAnswer({ ...answer, email });
+    fetch('/app/answer', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ...answer, email })
+    })
     navigate(RouteE.THANK_YOU);
   };
 
